@@ -1,0 +1,49 @@
+.header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+
+  height: 3.125rem;
+
+  color: var(--color-text);
+  background-color: #f8f8f8;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-group {
+  display: flex;
+  align-items: baseline;
+
+  margin-left: auto;
+}
+
+.header-info {
+  font-size: var(--font-info);
+
+  margin-left: .625rem;
+}
+
+.header-btn {
+  font: inherit;
+  font-size: var(--font-info);
+
+  margin-left: auto;
+
+  cursor: pointer;
+
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+.header-btn:focus,
+.header-btn:hover {
+  color: var(--color-primary);
+  outline: none;
+}

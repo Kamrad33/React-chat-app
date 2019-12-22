@@ -1,0 +1,78 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.input-text {
+  font: inherit;
+  font-size: var(--font-text);
+
+  display: block;
+
+  width: 100%;
+  padding: 1rem 1.25rem;
+
+  transition: .15s ease-in-out;
+
+  color: var(--color-text);
+  border: var(--border-transparent);
+  border-radius: var(--border-radius);
+  background-color: var(--color-secondary);
+}
+
+.input-text:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.btn {
+  font: inherit;
+  font-size: var(--font-text);
+
+  width: 100%;
+  padding: 1rem 1.25rem;
+
+  cursor: pointer;
+  transition: .15s ease-in-out;
+
+  color: inherit;
+  border: var(--border-transparent);
+  border-radius: var(--border-radius);
+}
+
+.btn:hover,
+.btn:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+
+:root {
+  --color-primary: #42a5f5;
+  --color-secondary: #eeeeee;
+  --color-text: #707070;
+  --color-text-inverse: #fff;
+
+  --font-text: 0.875rem;
+  --font-info: 0.75rem;
+
+  --border-radius: 0.625rem;
+  --border-transparent: 2px solid transparent;
+
+  --width-lg: 900px;
+}

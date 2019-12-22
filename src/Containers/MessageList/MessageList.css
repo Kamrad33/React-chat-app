@@ -1,0 +1,67 @@
+.message-list {
+  position: relative;
+
+  overflow-x: hidden;
+
+  height: 100%;
+  padding: 1rem;
+}
+
+.message-list::-webkit-scrollbar {
+  width: .5rem;
+}
+
+.message-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--color-secondary);
+}
+
+.message-list__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.appear-enter {
+  transform: scale(.3) perspective(300px) rotateX(30deg);
+
+  opacity: 0;
+}
+.appear-enter-active {
+  transition: all 300ms ease-out;
+  transform: scale(1) perspective(300px) rotateY(0deg);
+
+  opacity: 1;
+}
+
+.to-bottom {
+  position: sticky;
+  bottom: 10px;
+
+  float: right;
+
+  width: 2rem;
+  height: 2rem;
+
+  cursor: pointer;
+
+  color: var(--color-primary);
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+}
+
+.to-bottom:focus,
+.to-bottom:hover {
+  color: white;
+  outline: none;
+  background-color: var(--color-primary);
+}
+
+.to-bottom__arrow {
+  width: 100%;
+  height: 100%;
+
+  transform: rotateZ(90deg) translateX(10%);
+
+  fill: currentColor;
+}

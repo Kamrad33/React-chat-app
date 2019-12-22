@@ -1,0 +1,40 @@
+.message-input__form {
+  display: flex;
+
+  margin-bottom: 4rem;
+}
+
+.message-input__form .input-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.message-send {
+  font: inherit;
+  font-size: var(--font-text);
+
+  display: block;
+
+  padding: 1rem 1.25rem;
+
+  cursor: pointer;
+  transition: .15s ease-in-out;
+
+  color: var(--color-text);
+  border: var(--border-transparent);
+  border-left: 1px solid currentColor;
+  border-radius: var(--border-radius);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: var(--color-secondary);
+}
+
+.message-send:hover,
+.message-send:focus {
+  color: var(--color-primary);
+  outline: none;
+}
+
+.message-send__icon {
+  fill: currentColor;
+}

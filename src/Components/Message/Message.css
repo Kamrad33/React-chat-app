@@ -1,0 +1,48 @@
+.message {
+  min-width: 250px;
+  max-width: 80%;
+  margin: .3125rem 0;
+  padding: .625rem;
+
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  background-color: currentColor;
+}
+
+.message__text {
+  line-height: 1.5;
+
+  color: white;
+
+  overflow-wrap: break-word;
+}
+
+.message__info {
+  font-size: var(--font-info);
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: .5rem;
+
+  color: white;
+}
+
+.message__userinfo {
+  margin-right: 1rem;
+}
+
+.notify {
+  font-size: var(--font-text);
+  line-height: 1.25;
+
+  align-self: center;
+
+  max-width: 80%;
+  padding: 0;
+
+  text-align: center;
+
+  color: currentColor;
+  background-color: transparent;
+}

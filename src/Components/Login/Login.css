@@ -1,0 +1,34 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 6rem;
+
+  color: var(--color-text);
+}
+
+.login-form__header,
+.login-form__info {
+  font: inherit;
+
+  margin: 0;
+
+  text-align: center;
+}
+
+.login-form__info {
+  font-size: var(--font-info);
+
+  margin-bottom: 3rem;
+}
+
+.login-form__button {
+  margin-top: 1.25rem;
+}
